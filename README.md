@@ -1,5 +1,5 @@
 # 文件使用说明 MUST SEE !!!
-# colab读取本地文件困难，读取云盘文件要耗时，所以代码分成两部分解决这个问题。请先在本地运行NPY and EDA,再在colab运行CNN
+colab读取本地文件困难，读取云盘文件要耗时，所以代码分成两部分解决这个问题。请先在本地运行NPY and EDA,再在colab运行CNN
 
 
 # CNN.ipynb
@@ -24,8 +24,8 @@
 4.第4部分是读取原始的npy文件，resize并统一所有图片的尺寸，生成结果保存为第二个.npy文件，
   我用的是resize尺寸是32*32，所以生成的npy只有300多M，
   
-  ## 你们可以随便设，以后如果对resize的尺寸不满意，在jupter上直接运行第4部分即可，不需要再运行第2部分。
-  ## 请将这个npy上传到你们google drive上，路径最好是  /content/drive/My Drive 然后就可以打开 CNN.ipynb直接跑model了，别忘记开GPU。
+  ### 你们可以随便设，以后如果对resize的尺寸不满意，在jupter上直接运行第4部分即可，不需要再运行第2部分。
+  ### 请将这个npy上传到你们google drive上，路径最好是  /content/drive/My Drive 然后就可以打开 CNN.ipynb直接跑model了，别忘记开GPU。
   
 5.这部分是EDA，发现标签分布是unblanced，如果需要补充的，请加在这一部分后，我原来想根据标签组合做重新做分类的，结果发现有700多种组合，
   多的几千，少的就10个。所以放弃了，还是用原始的binary coding做分类。
