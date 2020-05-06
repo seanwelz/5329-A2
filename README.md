@@ -27,13 +27,13 @@ colab读取本地文件困难，读取云盘文件要耗时，所以代码分成
   ### 你们可以随便设，以后如果对resize的尺寸不满意，在jupter上直接运行第4部分即可，不需要再运行第2部分。
   ### 请将这个npy上传到你们google drive上，路径最好是  /content/drive/My Drive 然后就可以打开 CNN.ipynb直接跑model了，别忘记开GPU。
   
-5.这部分是EDA，发现标签分布是unblanced，如果需要补充的，请加在这一部分后，我原来想根据标签组合做重新做分类的，结果发现有700多种组合，
+5.这部分是EDA，发现标签分布是unblanced，如果需要补充的，请加在这一部分后。原来想根据标签组合，重新做分类的，结果发现有700多种组合，
   多的几千，少的就10个。所以放弃了，还是用原始的binary coding做分类。
 
 
 # 备注：
-train.csv文件里的 第9086行 即9084.jpg 的caption在两个单元格里，需要合并不然读取时会报错；
+train.csv文件里的 第9086行 即9084.jpg 的caption在两个单元格里，需要合并，不然读取时会报错；
 
 如果在网上找代码，找到用tenseflow建模的，请看下代码的tenseflow版本是1还是2. 
-colab上的tenseflow已经是ver2.2了，版本1的tenseflow需要改很多代码，比较麻烦，浪费时间而却不一定成功
+colab上的tenseflow已经是ver2.2了，版本1的tenseflow需要改很多代码，比较麻烦，浪费时间而且不一定成功
 
